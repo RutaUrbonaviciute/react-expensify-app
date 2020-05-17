@@ -1,5 +1,5 @@
 {
-  "name": "indecision-app",
+  "name": "expensify-app",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Ruta Urbonaviciute",
@@ -9,7 +9,9 @@
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
-    "test": "jest --config=jest.config.json"
+    "test": "jest --config=jest.config.json",
+    "start": "node server/server.js",
+    "heroku-postbuild": "npm run build:prod"
   },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.8.3",
@@ -21,6 +23,7 @@
     "babel-loader": "^8.0.6",
     "css-loader": "^3.5.3",
     "enzyme-to-json": "^3.4.4",
+    "express": "^4.17.1",
     "jest": "^25.1.0",
     "live-server": "^1.2.1",
     "moment": "^2.25.3",
