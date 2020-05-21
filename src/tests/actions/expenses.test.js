@@ -1,14 +1,14 @@
 import configureStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 import {
-  startAddExpense,
   addExpense,
-  removeExpense,
   editExpense,
+  removeExpense,
   setExpenses,
-  startSetExpenses,
+  startAddExpense,
+  startEditExpense,
   startRemoveExpense,
-  startEditExpense
+  startSetExpenses
 } from '../../actions/expenses';
 import expenses from '../fixtures/expenses';
 import database from '../../firebase/firebase';
@@ -72,10 +72,7 @@ test('should edit expense from firebase', (done) => {
       updates
     })
     return database.ref(`expenses/${id}`).once('value').then((snapshot) => {
-      expect(snapshot.val()).toEqual({
-        ...snapshot.val(),
-        ...updates
-      })
+      expect(snapshot.val().note).toBe(updates.note)
       done()
     })
   })
