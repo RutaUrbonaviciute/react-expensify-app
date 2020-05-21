@@ -31,7 +31,7 @@
 //   console.log(snapshot.key, snapshot.val());
 // })
 
-
+// VALUE
 // database.ref('expenses').once('value')
 //   .then((snapshot) => {
 //     console.log(snapshot.val());
