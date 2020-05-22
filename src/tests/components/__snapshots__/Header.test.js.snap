@@ -18,5 +18,10 @@ exports[`<Header /> should render header correctly 1`] = `
   >
     Create
   </NavLink>
+  <button
+    onClick={[Function]}
+  >
+    Log Out
+  </button>
 </header>
 `;
