@@ -1,0 +1,41 @@
+.button {
+  $this: &;
+
+  background-color: $orange;
+  border-radius: 3px;
+  border: none;
+  color: #fefefe;
+  display: inline-block;
+  font-size:$font-size-large;
+  font-weight: 300;
+  line-height: 1;
+  padding: $m-size;
+  text-decoration: none;
+
+  &:hover, &:focus {
+    background-color: $dark-orange;
+    transition: background-color .3s ease-out;
+  }
+}
+
+.button--link {
+  background: none;
+
+
+  &:hover, &:focus {
+    background: none;
+    color: $orange;
+    transition: color .3s ease-out;
+  }
+}
+
+.button-secondary {
+  background-color: $light-green;
+  color: $body;
+
+  &:hover, &:focus {
+    background-color: $dark-green;
+    color:  #fefefe;
+    transition: background-color .3s ease-out, color .3s ease-out;
+  }
+}

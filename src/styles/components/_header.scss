@@ -1,0 +1,18 @@
+.header {
+  background-color: $dark-green;
+
+&__content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: $s-size 0;
+}
+
+  &__title {
+    color: #fefefe;
+    text-decoration: none;
+     h1 {
+       margin: 0
+     }
+  }
+}
