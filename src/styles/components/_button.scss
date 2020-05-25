@@ -34,8 +34,7 @@
   color: $body;
 
   &:hover, &:focus {
-    background-color: $dark-green;
-    color:  #fefefe;
+    background-color: darken($light-green, 10%);
     transition: background-color .3s ease-out, color .3s ease-out;
   }
 }
