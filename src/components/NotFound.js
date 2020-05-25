@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const NotFound = () => (
   <div>
-    404 not found bithezz - <Link to="/">go fkin home</Link>
+    404 not found - <Link to="/">go home</Link>
   </div>
 )
 
